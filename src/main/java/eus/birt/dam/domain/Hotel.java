@@ -24,7 +24,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-@Document(collection="hotelData")
+@Document(collection="hotelesEuskadi")
 
 public class Hotel {
 		
