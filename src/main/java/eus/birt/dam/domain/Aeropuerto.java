@@ -11,9 +11,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 
-//Solo se incluirán en el JSON las propiedades que no sean nulas
+// solo se incluirán en el JSON las propiedades que no sean nulas
 @JsonInclude(JsonInclude.Include.NON_NULL) 
-//Especifica el orden en el que las propiedades del objeto deben aparecer en el JSON
+// especifica el orden en el que las propiedades del objeto deben aparecer en el JSON
 @JsonPropertyOrder({
     "_id",
     "id",
@@ -24,14 +24,14 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-@Document(collection="hotelesEuskadi")
+@Document(collection="aeropuertos")
 
-public class Hotel {
+public class Aeropuerto {
 		
 	@JsonProperty("_id")
 	private String id;
 	@JsonProperty("id")
-    private Integer establecimientoId;
+    private Integer aeropuertoId;
     @JsonProperty("type")
     private String type;
     @JsonProperty("geometry")

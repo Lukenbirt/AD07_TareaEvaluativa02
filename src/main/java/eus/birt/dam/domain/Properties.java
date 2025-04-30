@@ -11,21 +11,11 @@ import lombok.NoArgsConstructor;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
 "documentname",
-"turismdescription",
+"documentdescription",
 "templatetype",
-"locality",
 "marks",
-"physical",
-"visual",
-"auditive",
-"intellectual",
-"organic",
 "tourismemail",
 "web",
-"lodgingtype",
-"category",
-"signatura",
-"capacity",
 "municipality",
 "municipalitycode",
 "territory",
@@ -46,36 +36,16 @@ public class Properties {
 
 	@JsonProperty("documentname")
 	public String documentname;
-	@JsonProperty("turismdescription")
-	public String turismdescription;
+	@JsonProperty("documentdescription")
+	public String documentdescription;
 	@JsonProperty("templatetype")
 	public String templatetype;
-	@JsonProperty("locality")
-	public String locality;
 	@JsonProperty("marks")
 	public String marks;
-	@JsonProperty("physical")
-	public String physical;
-	@JsonProperty("visual")
-	public String visual;
-	@JsonProperty("auditive")
-	public String auditive;
-	@JsonProperty("intellectual")
-	public String intellectual;
-	@JsonProperty("organic")
-	public String organic;
 	@JsonProperty("tourismemail")
 	public String tourismemail;
 	@JsonProperty("web")
 	public String web;
-	@JsonProperty("lodgingtype")
-	public String lodgingtype;
-	@JsonProperty("category")
-	public String category;
-	@JsonProperty("signatura")
-	public String signatura;
-	@JsonProperty("capacity")
-	public String capacity;
 	@JsonProperty("municipality")
 	public String municipality;
 	@JsonProperty("municipalitycode")
@@ -98,6 +68,5 @@ public class Properties {
 	public String metadataxml;
 	@JsonProperty("zipfile")
 	public String zipfile;
-
 }
 
